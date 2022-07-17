@@ -22,7 +22,7 @@
   
        stage('build docker image') {
         steps {
-            sh 
+             
            sh 'docker build ./docker -t parthac1/myapp:v1'
         }
      }
