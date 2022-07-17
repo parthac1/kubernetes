@@ -32,10 +32,12 @@
         steps {
          withCredentials([string(credentialsId: 'Dockerpasword', variable: 'dockerpasword')]) {
          sh "docker login -u parthac1 -p ${dockerpasword}"
-}
-        }
+            }
+        
         sh 'docker push parthac1/myapp:v1'
-     
+        }
+        
+        }
      }
   
   
@@ -45,5 +47,5 @@
  
  
  
- }
+ 
 
