@@ -1,5 +1,5 @@
  pipeline {
-    ageny any 
+    agent any 
  tools {
   dockerTool 'jenkins-docker'
   maven 'jenkins-maven'
