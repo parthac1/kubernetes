@@ -45,7 +45,7 @@
           steps{
 
              
-              sh 'helm install petclinic helmchart-myapp/myapp'
+              sh 'helm install petclinic helmchart-myapp'
           }
       }
      
