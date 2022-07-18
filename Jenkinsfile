@@ -44,8 +44,8 @@
       {
           steps{
 
-              sh 'cp -R helmchart-myapp /* . '
-              sh 'helm install petclinic myapp'
+             
+              sh 'helm install petclinic helmchart-myapp/myapp'
           }
       }
      
