@@ -39,6 +39,18 @@
         }
         
         }
+     
+      stage ('deploy into k8')
+      {
+          steps{
+
+              sh 'cp -R helm/* . '
+              sh 'helm install petclinic myapp'
+          }
+      }
+     
+     
+     
      }
   
   
